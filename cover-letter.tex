@@ -1,9 +1,9 @@
-% Cover letter template — compile with pdflatex (or latexmk -pdf)
+% Cover letter template — compile with lualatex (needs Times New Roman installed)
 \documentclass[11pt]{article}
 
 \usepackage[a4paper, top=1.8cm, bottom=2cm, left=2.2cm, right=2.2cm]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage[lining]{ebgaramond}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
 \usepackage{microtype}
 \usepackage[hidelinks]{hyperref}
 
@@ -21,8 +21,8 @@
 \newcommand{\myemail}{mahadevsunilkumar03@gmail.com}
 
 % ---------- Recipient ----------
-\newcommand{\recipientname}{Dr. Elodie Jahns}
-\newcommand{\recipientorg}{Avon University}
+\newcommand{\recipientname}{Prof. Bipin Rajendran}
+\newcommand{\recipientorg}{Northeastern University London}
 \newcommand{\letterdate}{\today}
 
 \begin{document}
@@ -33,11 +33,11 @@
   {\fontsize{22}{27}\selectfont\bfseries\textls[120]{\MakeUppercase{\myname}}}\par
   \vspace{0.1em}
   {\large\bfseries \mytitle}\par
-  {\large \myaddress}\par
+  {\myaddress}\par
 \end{center}
 \vspace{-1.2em}
-{\large\bfseries \myphone \hfill \href{mailto:\myemail}{\myemail}}\par
-\vspace{-0.8em}
+{\bfseries \myphone \hfill \href{mailto:\myemail}{\myemail}}\par
+\vspace{-1.0em}
 \rule{\linewidth}{0.8pt}
 
 % ---------- Recipient ----------
@@ -47,7 +47,7 @@
 
 \letterdate
 
-Dear Dr. Jahns,
+Dear Prof. Rajendran,
 
 I'm excited by the prospect of carrying out my doctorate research at Avon University, exploring the sociophonetic perception of second-generation immigrants. Since the time of my undergraduate studies, I have been aware of Avon's ground-breaking research in the field of linguistics. My fascination with this work has long inspired my hope of being part of your research team. I think the fit with my profile is excellent and would be mutually rewarding.
 
